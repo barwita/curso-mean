@@ -1,0 +1,9 @@
+<h1>{{titulo}}</h1>
+
+
+Nombre del parque
+<input type="text" [(ngModel)]="nombreParque">{{nombreParque}}
+<p>{{color}}</p>
+<p>Datos desde el parque: {{datoDesdeElParque}}</p>
+<br>
+<parque [nombre]="nombreParque" (pasarDatos)="verDatosParque($event)"> </parque>
